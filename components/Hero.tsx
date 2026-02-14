@@ -44,7 +44,7 @@ async fn get_user(
   });
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-80px)]">
+    <section id="about" className="py-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-80px)]">
       <div>
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-term-card border border-term-border rounded-full text-xs font-mono text-term-success mb-6 animate-fade-in">
             <span className="w-2 h-2 bg-term-success rounded-full animate-pulse"></span>
