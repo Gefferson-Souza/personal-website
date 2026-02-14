@@ -8,7 +8,7 @@ export default function Footer() {
             <p className="text-term-muted text-sm">Open for backend engineering roles.</p>
           </div>
           <div className="flex gap-6 font-mono text-sm">
-            <a href="mailto:[EMAIL_ADDRESS]" className="text-term-muted hover:text-term-success transition-colors">email</a>
+            <a href="mailto:geffersonteodorodesouza@gmail.com" className="text-term-muted hover:text-term-success transition-colors">email</a>
             <a href="https://www.linkedin.com/in/gefferson-teodoro-de-souza-desenvolvedor-full-stck/" className="text-term-muted hover:text-term-success transition-colors">linkedin</a>
             <a href="https://github.com/Gefferson-Souza" className="text-term-muted hover:text-term-success transition-colors">github</a>
             <a href="#" className="text-term-muted hover:text-term-success transition-colors">resume.pdf</a>
