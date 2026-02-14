@@ -56,13 +56,13 @@ async fn get_user(
             <span className="text-term-success">Specialist</span>
         </h1>
         <p className="text-term-muted text-lg max-w-xl mb-8 leading-relaxed font-light">
-             Senior Backend Engineer architecting high-performance systems. Bridging the gap between Node.js flexibility and Rust safety. Focusing on Domain-Driven Design and scalable infrastructure.
+             Senior Backend Engineer architecting high-performance systems. Bridging the gap between NestJS flexibility and Rust safety. Focusing on Domain-Driven Design and scalable infrastructure.
         </p>
         <div className="flex flex-wrap gap-4 font-mono text-sm">
             <a href="#experience" className="px-6 py-3 bg-term-text text-term-bg font-bold hover:bg-term-success transition-colors rounded-sm flex items-center gap-2">
                 view_experience()
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-term-border text-term-muted hover:text-white hover:border-white transition-colors flex items-center gap-2 rounded-sm">
+            <a href="https://github.com/Gefferson-Souza" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-term-border text-term-muted hover:text-white hover:border-white transition-colors flex items-center gap-2 rounded-sm">
                 github_profile
                 <ArrowRight className="w-4 h-4" />
             </a>

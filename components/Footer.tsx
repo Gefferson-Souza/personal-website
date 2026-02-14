@@ -8,14 +8,14 @@ export default function Footer() {
             <p className="text-term-muted text-sm">Open for backend engineering roles.</p>
           </div>
           <div className="flex gap-6 font-mono text-sm">
-            <a href="mailto:hello@gefferson.dev" className="text-term-muted hover:text-term-success transition-colors">email</a>
-            <a href="#" className="text-term-muted hover:text-term-success transition-colors">linkedin</a>
-            <a href="#" className="text-term-muted hover:text-term-success transition-colors">github</a>
+            <a href="mailto:[EMAIL_ADDRESS]" className="text-term-muted hover:text-term-success transition-colors">email</a>
+            <a href="https://www.linkedin.com/in/gefferson-teodoro-de-souza-desenvolvedor-full-stck/" className="text-term-muted hover:text-term-success transition-colors">linkedin</a>
+            <a href="https://github.com/Gefferson-Souza" className="text-term-muted hover:text-term-success transition-colors">github</a>
             <a href="#" className="text-term-muted hover:text-term-success transition-colors">resume.pdf</a>
           </div>
         </div>
         <div className="mt-12 text-center text-xs text-term-border font-mono">
-          <p>© 2024 Gefferson Souza. All systems operational.</p>
+          <p>© 2026 Gefferson Souza. All systems operational.</p>
         </div>
       </div>
     </footer>
