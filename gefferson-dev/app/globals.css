@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override Shiki background to transparency to blend with our card */
+pre.shiki {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+}
+code {
+  font-family: var(--font-jetbrains-mono), monospace;
+  counter-reset: step;
+  counter-increment: step 0;
+}
+
+.bg-grid {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+    linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+}
