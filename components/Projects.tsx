@@ -32,7 +32,7 @@ export default function Projects() {
           </div>
 
           {/* GoiásScript */}
-          <div className="group bg-term-card border border-term-border hover:border-term-accent transition-all p-8 relative overflow-hidden">
+          <div id="lab" className="group bg-term-card border border-term-border hover:border-term-accent transition-all p-8 relative overflow-hidden">
              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Code2 className="w-12 h-12 text-term-muted group-hover:text-term-accent transition-colors" />
              </div>
