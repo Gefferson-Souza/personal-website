@@ -10,7 +10,7 @@ const jetbrains = JetBrains_Mono({
 
 const title = "Gefferson Souza | Backend Engineer (Node.js, NestJS)";
 const description =
-  "Backend engineer (Node.js, TypeScript, NestJS, PostgreSQL). Offline-first, multi-tenant retail systems; led a Kubernetes (EKS) migration. Goiânia, UTC−3.";
+  "Backend engineer (Node.js, TypeScript, NestJS, PostgreSQL). Offline-first, multi-tenant retail systems and Brazilian tax e-invoicing. Goiânia, UTC-3.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -50,7 +50,6 @@ const personJsonLd = {
   address: {
     "@type": "PostalAddress",
     addressLocality: "Goiânia",
-    addressRegion: "GO",
     addressCountry: "BR",
   },
   alumniOf: {
@@ -63,7 +62,6 @@ const personJsonLd = {
     "NestJS",
     "PostgreSQL",
     "RabbitMQ",
-    "Kubernetes",
     "Event-driven architecture",
     "Multi-tenancy",
     "Offline-first systems",

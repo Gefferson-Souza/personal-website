@@ -24,7 +24,7 @@ export default function Projects() {
             <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-term-success transition-colors">Tyrus</h3>
 
             <p className="text-term-muted text-sm mb-6 leading-relaxed flex-grow">
-              An experimental TypeScript-to-Rust transpiler. It analyzes TypeScript ASTs, including NestJS decorators, and generates Rust services on Axum and Tokio.</p>
+              An experimental TypeScript-to-Rust transpiler with Axum and Tokio code generation.</p>
 
             <div className="flex flex-wrap gap-2 mb-8">
               {["TypeScript", "Rust", "Axum", "Tokio"].map(tag => (
@@ -57,7 +57,7 @@ export default function Projects() {
             <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-term-accent transition-colors">GoiásScript</h3>
 
             <p className="text-term-muted text-sm mb-6 leading-relaxed flex-grow">
-              A programming language with a hand-written lexer and parser that compiles to JavaScript.
+              An esoteric programming language with a hand-written lexer and parser that compiles to JavaScript.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-8">
@@ -80,10 +80,10 @@ export default function Projects() {
               <span className="px-2 py-1 bg-term-bg text-term-muted text-xs font-mono border border-term-border">PERSONAL SETUP</span>
             </div>
 
-            <h3 className="text-2xl font-bold mb-4 text-white">Claude Code pre-commit gates</h3>
+            <h3 className="text-2xl font-bold mb-4 text-white">Claude Code quality gates (hooks)</h3>
 
             <p className="text-term-muted text-sm mb-6 leading-relaxed">
-              On my own time I analyzed 3,454 of my AI-assisted coding sessions (17.6% of my messages were corrections) and built Claude Code pre-commit gates.
+              Quality gates (hooks) for AI-assisted coding, built after I analyzed 3,454 of my own sessions: 17.6% of my messages were corrections.
             </p>
 
             <div className="flex flex-wrap gap-2">

@@ -1,20 +1,31 @@
-// Só skills da ficha de fatos v2, seção 5. Core = Expert, Also used = Proficient, Familiar = Familiar.
+// Só skills da ficha de fatos v2, seção 5. Os três primeiros grupos = Expert, Also used = Proficient, Familiar = Familiar.
 // A palavra "Expert" não aparece no site de propósito.
 type Skill = { name: string; note?: string };
 
 const groups: { title: string; skills: Skill[] }[] = [
   {
-    title: "Core",
+    title: "Languages and frameworks",
     skills: [
       { name: "TypeScript" },
       { name: "Node.js" },
       { name: "NestJS" },
+      { name: "REST APIs" },
+    ],
+  },
+  {
+    title: "Data and messaging",
+    skills: [
       { name: "PostgreSQL" },
       { name: "RabbitMQ" },
-      { name: "REST APIs" },
+    ],
+  },
+  {
+    title: "Practices",
+    skills: [
       { name: "Event-driven architecture" },
       { name: "Offline-first design" },
       { name: "Multi-tenancy" },
+      { name: "Brazilian tax e-invoicing integrations" },
     ],
   },
   {
@@ -47,7 +58,7 @@ const groups: { title: string; skills: Skill[] }[] = [
     skills: [
       { name: "Claude Code" },
       { name: "Agent workflows" },
-      { name: "Pre-commit quality gates (hooks)" },
+      { name: "Quality gates (hooks)" },
       { name: "MCP servers" },
     ],
   },
@@ -62,7 +73,7 @@ export default function Skills() {
             <span className="text-term-success">02.</span> Skills
           </h2>
           <p className="text-term-muted text-sm leading-relaxed">
-            Core is what I use at work. Familiar means I have worked with it, not that I run it.
+            The first three groups are where I am strongest. Familiar means I have worked with it, not that I run it.
           </p>
         </div>
         <div className="md:w-2/3 grid gap-8 sm:grid-cols-2">

@@ -8,7 +8,7 @@ export const profile = {
   shortName: "Gefferson Souza",
   jobTitle: "Software Engineer (Backend)",
   employer: "Duofy",
-  location: "Goiânia, Brazil (UTC−3)",
+  location: "Goiânia, Brazil (UTC-3)",
   email: "geffersonteodorodesouza@gmail.com",
   github: "https://github.com/Gefferson-Souza",
   // TODO(dono): trocar pelo slug novo quando for escolhido (ficha v2, seção 1:
@@ -24,8 +24,6 @@ export const keywords = [
   "NestJS",
   "PostgreSQL",
   "RabbitMQ",
-  "Kubernetes",
-  "Amazon EKS",
   "event-driven architecture",
   "multi-tenant",
   "offline-first",

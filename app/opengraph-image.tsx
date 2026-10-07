@@ -29,7 +29,7 @@ export default function OpengraphImage() {
           Offline-first, multi-tenant retail systems
         </div>
         <div style={{ fontSize: 26, color: "#a3a3a3", marginTop: 12 }}>
-          Goiânia, Brazil (UTC−3)
+          Goiânia, Brazil (UTC-3)
         </div>
       </div>
     ),

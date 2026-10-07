@@ -11,12 +11,12 @@ export default function Navbar() {
               gefferson_souza<span aria-hidden="true" className="text-term-success animate-pulse">_</span>
             </span>
           </div>
-          <div className="flex items-center space-x-4 md:space-x-8 w-full justify-end sm:w-auto font-mono text-xs md:text-sm">
+          <div className="flex items-center space-x-3 md:space-x-8 w-full justify-end sm:w-auto font-mono text-[11px] sm:text-xs md:text-sm overflow-x-auto whitespace-nowrap">
             <a href="#experience" className="py-2 text-term-muted hover:text-term-success transition-colors">Experience</a>
-            <a href="#skills" className="hidden md:inline py-2 text-term-muted hover:text-term-success transition-colors">Skills</a>
+            <a href="#skills" className="py-2 text-term-muted hover:text-term-success transition-colors">Skills</a>
             <a href="#projects" className="py-2 text-term-muted hover:text-term-success transition-colors">Projects</a>
-            <a href="#about" className="hidden md:inline py-2 text-term-muted hover:text-term-success transition-colors">About</a>
-            <a href="#contact" className="px-4 py-1.5 border border-term-border hover:border-term-success text-term-success rounded hover:bg-term-success/10 transition-all">
+            <a href="#about" className="py-2 text-term-muted hover:text-term-success transition-colors">About</a>
+            <a href="#contact" className="px-3 md:px-4 py-1.5 border border-term-border hover:border-term-success text-term-success rounded hover:bg-term-success/10 transition-all">
               Contact
             </a>
           </div>

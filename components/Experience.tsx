@@ -7,13 +7,10 @@ export default function Experience() {
       role: "Software Engineer (Backend)",
       date: "APR 2025 — PRESENT",
       summary:
-        "Retail POS and ERP platform in an NX monorepo (NestJS, TypeORM, PostgreSQL, RabbitMQ).",
+        "Backend for a multi-tenant retail platform (point of sale and ERP), with offline-first operation and Brazilian tax e-invoicing integrations. Stack: NestJS, PostgreSQL, RabbitMQ.",
       tech: ["TypeScript", "NestJS", "PostgreSQL", "RabbitMQ", "Offline-first", "Multi-tenant"],
       description: [
-        "Restored sales for every client in a Brazilian state after its tax authority changed how it validates tax documents on New Year's Day; I diagnosed and fixed it myself, on the holiday.",
-        "Designed an offline-first layer that queues transactions when the network or a government API is down and replays them on recovery, so stores keep selling through outages.",
-        "Built a RabbitMQ synchronization engine with scheduled reconciliation to keep point-of-sale and ERP data in sync through third-party outages.",
-        "Built a request-context layer on Node.js AsyncLocalStorage that carries the tenant through each request across the monorepo, replacing manual metadata propagation."
+        "Restored sales for every affected client after a Brazilian tax authority began rejecting tax documents on New Year's Day; I diagnosed and fixed it myself, on the holiday."
       ]
     },
     {
@@ -21,7 +18,7 @@ export default function Experience() {
       role: "Software Engineer → Tech Lead",
       date: "JAN 2024 — APR 2025",
       summary:
-        "Joined as a junior developer in Jan 2024; promoted to mid-level in Jul 2024 and to Tech Lead of a small team in Sep 2024, eight months after joining.",
+        "Joined as a junior developer (Jan 2024); mid-level (Jul 2024); Tech Lead of a small team (Sep 2024).",
       tech: ["Kubernetes", "AWS EKS", "Tax e-invoicing", "CT-e", "NF-e", "MDF-e"],
       description: [
         "Removed 20+ hours of manual work per month by automating the issuance of Brazilian electronic tax documents (CT-e, NF-e, MDF-e): three document types once issued by hand across three systems are now generated when a grain-truck freight ticket is created.",
