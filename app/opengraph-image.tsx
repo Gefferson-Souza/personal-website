@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Gefferson Souza: Backend Engineer";
+export const alt = "Gefferson Souza: Backend Engineer, Node.js, TypeScript, NestJS";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -22,11 +22,14 @@ export default function OpengraphImage() {
       >
         <div style={{ fontSize: 28, color: "#22c55e" }}>gefferson_souza_</div>
         <div style={{ fontSize: 72, fontWeight: 700, marginTop: 24 }}>Backend Engineer</div>
-        <div style={{ fontSize: 34, color: "#888888", marginTop: 24 }}>
-          Node.js · NestJS · TypeScript · Rust
+        <div style={{ fontSize: 34, color: "#a3a3a3", marginTop: 24 }}>
+          Node.js · TypeScript · NestJS · PostgreSQL
         </div>
-        <div style={{ fontSize: 30, color: "#888888", marginTop: 12 }}>
-          Offline-first systems and fiscal integrations
+        <div style={{ fontSize: 30, color: "#a3a3a3", marginTop: 12 }}>
+          Event-driven, multi-tenant, offline-first systems
+        </div>
+        <div style={{ fontSize: 26, color: "#a3a3a3", marginTop: 12 }}>
+          Goiânia, Brazil (UTC−3)
         </div>
       </div>
     ),
