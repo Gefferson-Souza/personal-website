@@ -52,11 +52,11 @@ async fn get_user(
         </div>
         <h1 className="font-mono text-4xl lg:text-6xl font-bold leading-tight mb-6 text-term-text">
             <span className="text-term-muted">&lt;</span>Backend<span className="text-term-muted">/&gt;</span><br/>
-            Engineering<br/>
-            <span className="text-term-success">Specialist</span>
+            Resilient<br/>
+            <span className="text-term-success">Systems</span>
         </h1>
         <p className="text-term-muted text-lg max-w-xl mb-8 leading-relaxed font-light">
-             Senior Backend Engineer architecting high-performance systems. Bridging the gap between NestJS flexibility and Rust safety. Focusing on Domain-Driven Design and scalable infrastructure.
+             Software Engineer (Backend) building offline-first systems and fiscal integrations for retail. Bridging the gap between NestJS flexibility and Rust safety, with a focus on Domain-Driven Design and failure-first architecture.
         </p>
         <div className="flex flex-wrap gap-4 font-mono text-sm">
             <a href="#experience" className="px-6 py-3 bg-term-text text-term-bg font-bold hover:bg-term-success transition-colors rounded-sm flex items-center gap-2">

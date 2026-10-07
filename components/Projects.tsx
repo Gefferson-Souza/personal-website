@@ -54,7 +54,7 @@ export default function Projects() {
             <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-term-purple transition-colors">GoiásScript</h3>
 
             <p className="text-term-muted text-sm mb-6 leading-relaxed flex-grow">
-              A Turing-complete programming language implementing a custom lexer and parser. Built to demonstrate AST manipulation while paying homage to the Brazilian &ldquo;Caipira&rdquo; dialect.
+              An esoteric programming language with a hand-written lexer and parser that compiles to JavaScript. Built to explore AST manipulation while paying homage to the Brazilian &ldquo;Caipira&rdquo; dialect.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-8">

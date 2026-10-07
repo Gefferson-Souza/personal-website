@@ -4,36 +4,36 @@ export default function Experience() {
   const jobs = [
     {
       company: "Duofy",
-      role: "Senior Backend Engineer",
+      role: "Software Engineer (Backend)",
       date: "APR 2025 — PRESENT",
-      tech: ["NestJS", "RabbitMQ", "Node.js Architecture"],
+      tech: ["NestJS", "RabbitMQ", "PostgreSQL", "Offline-first"],
       description: [
-        "Architected a high-performance multi-tenant context system using AsyncLocalStorage, reducing code coupling by 40%.",
-        "Designed a 'Zero Data Loss' loyalty sync engine using RabbitMQ and cron jobs that survived critical ERP outages.",
-        "Optimized microservices memory footprint by implementing dynamic lazy loading for native C++ hardware drivers."
+        "Restored service for every affected terminal in the state after the tax authority began enforcing a regulatory change it had publicly postponed; diagnosed and shipped the fix alone during the holiday shutdown.",
+        "Designed an offline-first contingency layer that queues transactions when the network or an upstream government API is unavailable and reconciles on recovery.",
+        "Built a multi-tenant request-context layer on Node.js AsyncLocalStorage across the monorepo, eliminating manual metadata propagation and the cross-tenant leaks it caused.",
+        "Designed a RabbitMQ synchronization engine with scheduled reconciliation that keeps point-of-sale and ERP data consistent through third-party outages.",
+        "Built pre-commit gates that block untyped code, debug statements and untracked work before review, after analyzing 3,454 AI-assisted coding sessions."
       ]
     },
     {
-      company: "Fox Digital",
-      role: "Tech Lead",
-      date: "SEP 2024 — APR 2025",
-      tech: ["Kubernetes", "Microservices", "System Resilience"],
+      company: "Fox Digital Commodities",
+      role: "Software Engineer → Tech Lead",
+      date: "JAN 2024 — APR 2025",
+      tech: ["Kubernetes", "EKS", "Fiscal Automation", "REST APIs"],
       description: [
-        "Solely resolved a critical production failure in the government fiscal integration (SEFAZ) during a holiday peak, ensuring zero downtime.",
-        "Led the migration to containerized microservices (Docker/K8s), cutting cloud infrastructure costs by 15%.",
-        "Automated the entire corporate communication pipeline, eliminating 20+ hours of manual operations monthly."
+        "Joined as a junior developer; promoted to mid-level in Jul 2024 and to Tech Lead in Sep 2024.",
+        "Removed 20+ hours of manual work per month by automating fiscal document issuance: three document types once issued by hand across three systems now emit from a single freight ticket.",
+        "Drove the migration of monolithic services to Kubernetes on EKS with one infrastructure engineer, and owned architecture through production deployment.",
+        "Mentored 4 developers on clean code, SOLID, Git workflow and Docker practice.",
+        "Built REST APIs for real-time freight calculation and tax assessment, and BI dashboards over MapBox and Google Maps for fleet tracking."
       ]
     },
     {
-      company: "Emestone Mining",
-      role: "Software Engineer",
-      date: "MAY 2023 — JAN 2024",
-      tech: ["React", "CI/CD", "Performance Engineering"],
-      description: [
-        "Orchestrated the complete production rollout, taking the project from local development to a live cloud environment.", // AQUI ESTÁ O "BOTEI PRA RODAR"
-        "Engineered high-performance dashboards, boosting page load speeds by 30% via advanced lazy loading strategies.",
-        "Established automated testing protocols that reduced production bug reports by 40%."
-      ]
+      company: "Universidade Católica de Brasília",
+      role: "Technologist in Systems Analysis and Development",
+      date: "2024",
+      tech: [],
+      description: []
     }
   ];
 
@@ -65,6 +65,7 @@ export default function Experience() {
                  <span className="text-term-success font-mono text-sm">{job.company}</span>
               </div>
 
+              {job.description.length > 0 && (
               <ul className="space-y-2 mb-4">
                 {job.description.map((item, i) => (
                   <li key={i} className="text-term-muted text-sm leading-relaxed pl-4 relative before:content-['>'] before:absolute before:left-0 before:text-term-border">
@@ -72,7 +73,9 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
+              )}
 
+              {job.tech.length > 0 && (
               <div className="flex flex-wrap gap-2">
                 {job.tech.map((t) => (
                   <span key={t} className="px-2 py-1 bg-term-card border border-term-border text-[10px] text-term-muted font-mono rounded">
@@ -80,6 +83,7 @@ export default function Experience() {
                   </span>
                 ))}
               </div>
+              )}
             </div>
           ))}
         </div>
