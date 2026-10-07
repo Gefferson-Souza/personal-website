@@ -17,21 +17,14 @@ export default function Experience() {
     },
     {
       company: "Fox Digital Commodities",
-      role: "Tech Lead / Software Engineer",
-      date: "SEP 2024 — APR 2025",
-      tech: ["Kubernetes", "EKS", "Fiscal Automation"],
+      role: "Software Engineer → Tech Lead",
+      date: "JAN 2024 — APR 2025",
+      tech: ["Kubernetes", "EKS", "Fiscal Automation", "REST APIs"],
       description: [
+        "Joined as a junior developer; promoted to mid-level in Jul 2024 and to Tech Lead in Sep 2024.",
         "Removed 20+ hours of manual work per month by automating fiscal document issuance: three document types once issued by hand across three systems now emit from a single freight ticket.",
         "Drove the migration of monolithic services to Kubernetes on EKS with one infrastructure engineer, and owned architecture through production deployment.",
-        "Mentored 4 developers on clean code, SOLID, Git workflow and Docker practice."
-      ]
-    },
-    {
-      company: "Fox Digital Commodities",
-      role: "Software Engineer (Full Stack)",
-      date: "JAN 2024 — AUG 2024",
-      tech: ["REST APIs", "MapBox", "BI Dashboards"],
-      description: [
+        "Mentored 4 developers on clean code, SOLID, Git workflow and Docker practice.",
         "Built REST APIs for real-time freight calculation and tax assessment, and BI dashboards over MapBox and Google Maps for fleet tracking."
       ]
     },
