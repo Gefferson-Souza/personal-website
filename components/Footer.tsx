@@ -11,13 +11,13 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h2 className="font-mono text-lg font-bold text-white mb-2">Get in touch</h2>
             <p className="text-term-muted text-sm">
-              Backend engineering, resilient systems and open-source compilers. {profile.location}.
+              Backend engineering. {profile.location}. Replies in English or Portuguese.
             </p>
           </div>
-          <nav aria-label="Contact" className="flex gap-6 font-mono text-sm">
-            <a href={`mailto:${profile.email}`} className={linkClass}>email</a>
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className={linkClass}>linkedin</a>
-            <a href={profile.github} target="_blank" rel="noopener noreferrer" className={linkClass}>github</a>
+          <nav aria-label="Contact" className="flex flex-wrap justify-center gap-x-6 font-mono text-sm">
+            <a href={`mailto:${profile.email}`} className={`${linkClass} break-all`}>{profile.email}</a>
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className={linkClass}>LinkedIn</a>
+            <a href={profile.github} target="_blank" rel="noopener noreferrer" className={linkClass}>GitHub</a>
           </nav>
         </div>
         <div className="mt-12 text-center text-xs text-term-muted font-mono">

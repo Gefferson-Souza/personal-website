@@ -12,12 +12,12 @@ export default function Navbar() {
             </span>
           </div>
           <div className="flex items-center space-x-4 md:space-x-8 w-full justify-end sm:w-auto font-mono text-xs md:text-sm">
-            <a href="#about" className="hidden md:inline py-2 text-term-muted hover:text-term-success transition-colors">~/about</a>
-            <a href="#skills" className="hidden md:inline py-2 text-term-muted hover:text-term-success transition-colors">~/skills</a>
-            <a href="#experience" className="py-2 text-term-muted hover:text-term-success transition-colors">~/experience</a>
-            <a href="#projects" className="py-2 text-term-muted hover:text-term-success transition-colors">~/projects</a>
+            <a href="#experience" className="py-2 text-term-muted hover:text-term-success transition-colors">Experience</a>
+            <a href="#skills" className="hidden md:inline py-2 text-term-muted hover:text-term-success transition-colors">Skills</a>
+            <a href="#projects" className="py-2 text-term-muted hover:text-term-success transition-colors">Projects</a>
+            <a href="#about" className="hidden md:inline py-2 text-term-muted hover:text-term-success transition-colors">About</a>
             <a href="#contact" className="px-4 py-1.5 border border-term-border hover:border-term-success text-term-success rounded hover:bg-term-success/10 transition-all">
-              contact.sh
+              Contact
             </a>
           </div>
         </div>

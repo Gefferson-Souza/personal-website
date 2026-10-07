@@ -26,7 +26,7 @@ export default function OpengraphImage() {
           Node.js · TypeScript · NestJS · PostgreSQL
         </div>
         <div style={{ fontSize: 30, color: "#a3a3a3", marginTop: 12 }}>
-          Event-driven, multi-tenant, offline-first systems
+          Offline-first, multi-tenant retail systems
         </div>
         <div style={{ fontSize: 26, color: "#a3a3a3", marginTop: 12 }}>
           Goiânia, Brazil (UTC−3)

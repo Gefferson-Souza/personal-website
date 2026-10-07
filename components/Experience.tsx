@@ -7,12 +7,12 @@ export default function Experience() {
       role: "Software Engineer (Backend)",
       date: "APR 2025 — PRESENT",
       summary:
-        "Retail POS and ERP platform: NX monorepo (NestJS, TypeORM, PostgreSQL, RabbitMQ), serving multiple tenants.",
+        "Retail POS and ERP platform in an NX monorepo (NestJS, TypeORM, PostgreSQL, RabbitMQ).",
       tech: ["TypeScript", "NestJS", "PostgreSQL", "RabbitMQ", "Offline-first", "Multi-tenant"],
       description: [
-        "Restored sales for every client in a Brazilian state after its tax authority (SEFAZ) changed how it validates tax documents on New Year's Day; I diagnosed and fixed it myself, on the holiday.",
+        "Restored sales for every client in a Brazilian state after its tax authority changed how it validates tax documents on New Year's Day; I diagnosed and fixed it myself, on the holiday.",
         "Designed an offline-first layer that queues transactions when the network or a government API is down and replays them on recovery, so stores keep selling through outages.",
-        "Built a RabbitMQ synchronization engine with scheduled reconciliation that keeps point-of-sale and ERP data consistent through third-party outages.",
+        "Built a RabbitMQ synchronization engine with scheduled reconciliation to keep point-of-sale and ERP data in sync through third-party outages.",
         "Built a request-context layer on Node.js AsyncLocalStorage that carries the tenant through each request across the monorepo, replacing manual metadata propagation."
       ]
     },
@@ -21,22 +21,13 @@ export default function Experience() {
       role: "Software Engineer → Tech Lead",
       date: "JAN 2024 — APR 2025",
       summary:
-        "Joined as a junior developer in Jan 2024; promoted to mid-level in Jul 2024 and to Tech Lead of a small team in Sep 2024.",
-      tech: ["Kubernetes", "EKS", "Docker", "Tax e-invoicing", "REST APIs"],
+        "Joined as a junior developer in Jan 2024; promoted to mid-level in Jul 2024 and to Tech Lead of a small team in Sep 2024, eight months after joining.",
+      tech: ["Kubernetes", "AWS EKS", "Tax e-invoicing", "CT-e", "NF-e", "MDF-e"],
       description: [
-        "Removed 20+ hours of manual work per month by automating the issuance of Brazilian electronic tax documents (CT-e, NF-e, MDF-e): three document types once issued by hand across three systems are now generated from a single freight ticket.",
-        "Led the migration of monolithic applications to Kubernetes on EKS and owned the architecture through production deployment.",
-        "Mentored 4 developers on clean code, SOLID, Git workflow and Docker.",
-        "Built REST APIs for freight calculation and Brazilian tax assessment, plus BI dashboards over MapBox and Google Maps for fleet tracking."
+        "Removed 20+ hours of manual work per month by automating the issuance of Brazilian electronic tax documents (CT-e, NF-e, MDF-e): three document types once issued by hand across three systems are now generated when a grain-truck freight ticket is created.",
+        "Led the migration of monolithic services to Kubernetes on EKS.",
+        "Mentored 4 developers."
       ]
-    },
-    {
-      company: "Universidade Católica de Brasília",
-      role: "Technologist Degree in Systems Analysis and Development",
-      date: "2024",
-      summary: "",
-      tech: [],
-      description: []
     }
   ];
 
@@ -45,10 +36,10 @@ export default function Experience() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-12">
         <div className="md:w-1/3">
           <h2 id="experience-title" className="font-mono text-2xl font-bold text-term-text mb-4 flex items-center gap-2">
-            <span className="text-term-success">03.</span> Experience Log
+            <span className="text-term-success">01.</span> Experience
           </h2>
           <p className="text-term-muted text-sm leading-relaxed">
-            Production work on retail and freight systems: incident response, offline-first design, tax-document automation and platform migration.
+            Most recent first. Two companies since Jan 2024.
           </p>
         </div>
         <ol className="md:w-2/3 space-y-12">

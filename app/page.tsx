@@ -12,10 +12,10 @@ export default function Home() {
       <Navbar />
       <main id="main" className="min-h-screen bg-term-bg relative bg-grid pt-24 pb-20">
         <Hero />
-        <About />
-        <Skills />
         <Experience />
+        <Skills />
         <Projects />
+        <About />
       </main>
       <Footer />
     </>
