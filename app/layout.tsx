@@ -7,9 +7,26 @@ const jetbrains = JetBrains_Mono({
   variable: "--font-jetbrains-mono"
 });
 
+const siteUrl = "https://gefferson-souza-dev.vercel.app";
+const title = "Gefferson Souza | Backend Engineer: Node.js, NestJS, TypeScript, Rust";
+const description =
+  "Backend engineer building resilient, offline-first systems and fiscal integrations with Node.js, NestJS and Rust. Creator of Tyrus and GoiásScript.";
+
 export const metadata: Metadata = {
-  title: "Gefferson Souza - Senior Backend Engineer",
-  description: "Building high-performance backends and compiler tools.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "Gefferson Souza",
+    title,
+    description,
+    locale: "en_US",
+  },
+  twitter: { card: "summary_large_image", title, description },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
