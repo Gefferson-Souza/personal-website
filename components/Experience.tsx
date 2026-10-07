@@ -7,14 +7,13 @@ export default function Experience() {
       role: "Software Engineer (Backend)",
       date: "APR 2025 — PRESENT",
       summary:
-        "Retail POS and ERP platform: NX monorepo (NestJS, TypeORM, PostgreSQL, RabbitMQ) behind TypeScript clients, serving multiple tenants.",
+        "Retail POS and ERP platform: NX monorepo (NestJS, TypeORM, PostgreSQL, RabbitMQ), serving multiple tenants.",
       tech: ["TypeScript", "NestJS", "PostgreSQL", "RabbitMQ", "Offline-first", "Multi-tenant"],
       description: [
-        "Restored sales for every client in the state after a tax-authority validation change on New Year's Day; diagnosed and fixed it alone, on the holiday.",
-        "Designed an offline-first contingency layer that queues transactions when the network or an upstream government API is unavailable and reconciles on recovery, keeping stores selling through outages.",
-        "Built a multi-tenant request-context layer on Node.js AsyncLocalStorage across the monorepo, eliminating manual metadata propagation and the cross-tenant leaks it caused.",
-        "Designed a RabbitMQ synchronization engine with scheduled reconciliation that keeps point-of-sale and ERP data consistent through third-party outages.",
-        "Built pre-commit gates that block untyped code, debug statements and untracked work before review, after analyzing 3,454 AI-assisted coding sessions to find where rework came from."
+        "Restored sales for every client in a Brazilian state after its tax authority (SEFAZ) changed how it validates tax documents on New Year's Day; I diagnosed and fixed it myself, on the holiday.",
+        "Designed an offline-first layer that queues transactions when the network or a government API is down and replays them on recovery, so stores keep selling through outages.",
+        "Built a RabbitMQ synchronization engine with scheduled reconciliation that keeps point-of-sale and ERP data consistent through third-party outages.",
+        "Built a request-context layer on Node.js AsyncLocalStorage that carries the tenant through each request across the monorepo, replacing manual metadata propagation."
       ]
     },
     {
@@ -22,13 +21,13 @@ export default function Experience() {
       role: "Software Engineer → Tech Lead",
       date: "JAN 2024 — APR 2025",
       summary:
-        "Joined as a junior developer in Jan 2024; promoted to mid-level in Jul 2024 and to Tech Lead in Sep 2024. Small team.",
-      tech: ["Kubernetes", "EKS", "Docker", "Fiscal automation", "REST APIs"],
+        "Joined as a junior developer in Jan 2024; promoted to mid-level in Jul 2024 and to Tech Lead of a small team in Sep 2024.",
+      tech: ["Kubernetes", "EKS", "Docker", "Tax e-invoicing", "REST APIs"],
       description: [
-        "Removed 20+ hours of manual work per month by automating fiscal document issuance (CT-e, NF-e, MDF-e): three document types once issued by hand across three systems now emit from a single freight ticket.",
-        "Led the migration of monolithic services to Kubernetes on EKS with one infrastructure engineer, and owned architecture through production deployment.",
-        "Mentored 4 developers on clean code, SOLID, Git workflow and Docker practice.",
-        "Built REST APIs for real-time freight calculation and Brazilian tax assessment, and real-time BI dashboards over MapBox and Google Maps for fleet tracking."
+        "Removed 20+ hours of manual work per month by automating the issuance of Brazilian electronic tax documents (CT-e, NF-e, MDF-e): three document types once issued by hand across three systems are now generated from a single freight ticket.",
+        "Led the migration of monolithic applications to Kubernetes on EKS and owned the architecture through production deployment.",
+        "Mentored 4 developers on clean code, SOLID, Git workflow and Docker.",
+        "Built REST APIs for freight calculation and Brazilian tax assessment, plus BI dashboards over MapBox and Google Maps for fleet tracking."
       ]
     },
     {
@@ -49,7 +48,7 @@ export default function Experience() {
             <span className="text-term-success">03.</span> Experience Log
           </h2>
           <p className="text-term-muted text-sm leading-relaxed">
-            Production work on retail and freight systems: incident response, offline contingency, fiscal automation and platform migration.
+            Production work on retail and freight systems: incident response, offline-first design, tax-document automation and platform migration.
           </p>
         </div>
         <ol className="md:w-2/3 space-y-12">

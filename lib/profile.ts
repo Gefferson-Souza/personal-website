@@ -24,11 +24,11 @@ export const keywords = [
   "PostgreSQL",
   "RabbitMQ",
   "Kubernetes",
-  "AWS EKS",
+  "Amazon EKS",
   "event-driven architecture",
   "multi-tenant",
   "offline-first",
   "REST APIs",
-  "fiscal integrations",
+  "tax e-invoicing",
   "Rust",
 ];

@@ -10,8 +10,10 @@ export class UsersController {
   ) {}
 
   @Get(':id')
-  async findOne(@Param('id') id: string) {
-    return this.service.findById(id);
+  async findOne(@Param('id', ParseUUIDPipe) id: string) {
+    const user = await this.service.findById(id);
+    if (!user) throw new NotFoundException();
+    return user;
   }
 }
 `.trim();
@@ -23,13 +25,16 @@ async fn get_user(
 ) -> Result<Json<User>, StatusCode> {
     sqlx::query_as!(
         User,
-        "SELECT * FROM users WHERE id = $1",
+        "SELECT id, name, email FROM users WHERE id = $1",
         id
     )
     .fetch_one(&pool)
     .await
     .map(Json)
-    .map_err(|_| StatusCode::NOT_FOUND)
+    .map_err(|e| match e {
+        sqlx::Error::RowNotFound => StatusCode::NOT_FOUND,
+        _ => StatusCode::SERVICE_UNAVAILABLE,
+    })
 }
 `.trim();
 
@@ -47,8 +52,7 @@ async fn get_user(
     <section id="top" aria-labelledby="hero-title" className="py-20 px-6 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-80px)]">
       <div>
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-term-card border border-term-border rounded-full text-xs font-mono text-term-success mb-6 animate-fade-in">
-            <span aria-hidden="true" className="w-2 h-2 bg-term-success rounded-full animate-pulse"></span>
-            SYSTEM ONLINE
+            Gefferson Souza · Goiânia, Brazil
         </div>
         <h1 id="hero-title" className="font-mono text-4xl lg:text-6xl font-bold leading-tight mb-6 text-term-text">
             <span aria-hidden="true" className="text-term-muted">&lt;</span>Backend<span aria-hidden="true" className="text-term-muted">/&gt;</span><br/>
@@ -56,10 +60,10 @@ async fn get_user(
             <span className="text-term-success">Systems</span>
         </h1>
         <p className="font-mono text-sm text-term-text mb-4">
-            Node.js · TypeScript · NestJS · PostgreSQL · Kubernetes on AWS
+            Node.js · TypeScript · NestJS · PostgreSQL · Kubernetes (EKS)
         </p>
         <p className="text-term-muted text-lg max-w-xl mb-8 leading-relaxed font-light">
-             Software Engineer (Backend) building event-driven, multi-tenant and offline-first systems for retail, with third-party fiscal integrations. NestJS day to day, Rust in open-source compiler projects.
+             Software Engineer (Backend) building event-driven, multi-tenant and offline-first systems for retail, with Brazilian tax e-invoicing integrations. NestJS day to day, Rust in open-source compiler projects.
         </p>
         <div className="flex flex-wrap gap-4 font-mono text-sm">
             <a href="#experience" className="px-6 py-3 bg-term-text text-term-bg font-bold hover:bg-term-success transition-colors rounded-sm flex items-center gap-2">
