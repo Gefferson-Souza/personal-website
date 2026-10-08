@@ -6,7 +6,7 @@ export const siteUrl = "https://gefferson-souza-dev.vercel.app";
 export const profile = {
   name: "Gefferson Teodoro de Souza",
   shortName: "Gefferson Souza",
-  jobTitle: "Software Engineer (Backend)",
+  jobTitle: "Software Engineer",
   employer: "Duofy",
   location: "Goiânia, Brazil (UTC-3)",
   email: "geffersonteodorodesouza@gmail.com",

@@ -4,10 +4,10 @@ export default function Experience() {
   const jobs = [
     {
       company: "Duofy",
-      role: "Software Engineer (Backend)",
+      role: "Software Engineer",
       date: "APR 2025 — PRESENT",
       summary:
-        "Backend for a multi-tenant retail platform (point of sale and ERP), with offline-first operation and Brazilian tax e-invoicing integrations. Stack: NestJS, PostgreSQL, RabbitMQ.",
+        "Full-stack role, mostly backend work on a multi-tenant retail platform (point of sale and ERP), with offline-first operation and Brazilian tax e-invoicing integrations. Stack: NestJS, PostgreSQL, RabbitMQ.",
       tech: ["TypeScript", "NestJS", "PostgreSQL", "RabbitMQ", "Offline-first", "Multi-tenant"],
       description: [
         "Restored sales for every affected client after a Brazilian tax authority began rejecting tax documents on New Year's Day; I diagnosed and fixed it myself, on the holiday."
