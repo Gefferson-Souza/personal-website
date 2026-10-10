@@ -14,7 +14,7 @@ export const profile = {
   // TODO(dono): trocar pelo slug novo quando for escolhido (ficha v2, seção 1:
   // gefferson-souza, geffersonsouza ou gefferson-t-souza). Ao trocar, atualizar no mesmo
   // passe currículo, README do GitHub e este arquivo. O slug atual foi mantido de propósito.
-  linkedin: "https://www.linkedin.com/in/gefferson-teodoro-de-souza-desenvolvedor-full-stck/",
+  linkedin: "https://www.linkedin.com/in/gefferson-souza/",
 } as const;
 
 export const keywords = [
