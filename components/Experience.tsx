@@ -14,7 +14,7 @@ export default function Experience() {
       ]
     },
     {
-      company: "Fox Digital Commodities",
+      company: "Fox Grãos",
       role: "Software Engineer → Tech Lead",
       date: "JAN 2024 — APR 2025",
       summary:
